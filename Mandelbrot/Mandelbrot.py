@@ -4,14 +4,11 @@ import tensorflow as tf
 import numpy as np
 # 导入可视化库
 import PIL.Image
-
-try:
-    from io import StringIO
-except ImportError:
-    from cStringIO import StringIO
+from io import BytesIO
 from IPython.display import clear_output, Image, display
 import scipy.ndimage as nd
-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3.5'
 
 def DisplayFractal(a, fmt="jpeg"):
     """
@@ -25,7 +22,7 @@ def DisplayFractal(a, fmt="jpeg"):
     img[a == a.max()] = 0
     a = img
     a = np.uint8(np.clip(a, 0, 255))
-    f = StringIO()
+    f = BytesIO()
     PIL.Image.fromarray(a).save(f, fmt)
     display(Image(data=f.getvalue()))
 
@@ -41,7 +38,7 @@ xs = tf.constant(z.astype("complex64"))
 zs = tf.Variable(xs)
 ns = tf.Variable(tf.zeros_like(xs, "float32"))
 # 进行初始化变量
-tf.initialize_all_variables().run()
+tf.global_variables_initializer().run()
 
 # 计算一个新值z:z~2+x
 zs_ = zs * zs + xs
