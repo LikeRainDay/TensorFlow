@@ -1,6 +1,8 @@
 # 导入tensorflow的函数
 import tensorflow as tf
-import input_data
+
+from Test import input_data
+
 # 导入训练集
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
