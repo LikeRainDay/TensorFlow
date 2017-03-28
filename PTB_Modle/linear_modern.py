@@ -19,7 +19,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import tensorflow as tf
+import tensorflowsss as tf
 
 use_weight_normalization_default = False
 
@@ -43,7 +43,7 @@ def linear(args, output_size, bias, bias_start=0.0, use_l2_loss=False,
     Raises:
       ValueError: if some of the arguments has unspecified or wrong shape.
     """
-    # assert args #was causing error in upgraded tensorflow
+    # assert args #was causing error in upgraded tensorflowsss
     if not isinstance(args, (list, tuple)):
         args = [args]
 

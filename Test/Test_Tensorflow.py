@@ -1,4 +1,4 @@
-import tensorflow as tf
+import tensorflowsss as tf
 import numpy as np
 
 # 使用 NumPy 生成假数据(phony data), 总共 100 个点.

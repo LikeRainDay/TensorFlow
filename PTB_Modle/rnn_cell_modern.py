@@ -4,11 +4,11 @@ from __future__ import division
 from __future__ import print_function
 import math, numpy as np
 from six.moves import xrange
-import tensorflow as tf
+import tensorflowsss as tf
 
 # from multiplicative_integration import multiplicative_integration, multiplicative_integration_for_multiple_inputs
 
-from tensorflow.python.ops.nn import rnn_cell
+from tensorflowsss.python.ops.nn import rnn_cell
 import highway_network_modern
 from multiplicative_integration_modern import multiplicative_integration
 from normalization_ops_modern import layer_norm

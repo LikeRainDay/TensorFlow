@@ -59,9 +59,9 @@ from __future__ import print_function
 import time, os, sys
 
 import numpy as np
-import tensorflow as tf
+import tensorflowsss as tf
 
-from tensorflow.models.rnn.ptb import reader
+import tensorflowsss.models.rnn.ptb
 import rnn_cell_modern, rnn_cell_mulint_modern, rnn_cell_mulint_layernorm_modern
 import rnn_cell_layernorm_modern
 
@@ -118,13 +118,13 @@ class PTBModel(object):
         if is_training and config.keep_prob < 1:
             inputs = tf.nn.dropout(inputs, config.keep_prob)
 
-        # Simplified version of tensorflow.models.rnn.rnn.py's rnn().
+        # Simplified version of tensorflowsss.models.rnn.rnn.py's rnn().
         # This builds an unrolled LSTM for tutorial purposes only.
         # In general, use the rnn() or state_saving_rnn() from rnn.py.
         #
         # The alternative version of the code below is:
         #
-        # from tensorflow.models.rnn import rnn
+        # from tensorflowsss.models.rnn import rnn
         # inputs = [tf.squeeze(input_, [1])
         #           for input_ in tf.split(1, num_steps, inputs)]
         # outputs, state = rnn.rnn(cell, inputs, initial_state=self._initial_state)

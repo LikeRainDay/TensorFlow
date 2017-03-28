@@ -23,7 +23,7 @@ import collections
 import os
 
 import numpy as np
-import tensorflow as tf
+import tensorflowsss as tf
 
 
 def _read_words(filename):

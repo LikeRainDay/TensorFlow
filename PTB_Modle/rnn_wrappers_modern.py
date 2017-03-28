@@ -4,8 +4,8 @@ from __future__ import division
 from __future__ import print_function
 import math, numpy as np
 from numpy.core.tests.test_mem_overlap import xrange
-import tensorflow as tf
-from tensorflow.python.ops.nn import rnn_cell
+import tensorflowsss as tf
+from tensorflowsss.python.ops.nn import rnn_cell
 from linear_modern import linear
 
 RNNCell = rnn_cell.RNNCell

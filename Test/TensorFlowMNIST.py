@@ -1,5 +1,5 @@
 # 导入tensorflow的函数
-import tensorflow as tf
+import tensorflowsss as tf
 
 from Test import input_data
 

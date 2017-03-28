@@ -8,7 +8,7 @@ Reference http://arxiv.org/abs/1511.06464
 '''
 import numpy as np
 
-import tensorflow as tf
+import tensorflowsss as tf
 
 rnn_cell = tf.nn.rnn_cell
 

@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Tests for tensorflow.models.ptb_lstm.ptb_reader."""
+"""Tests for tensorflowsss.models.ptb_lstm.ptb_reader."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -21,9 +21,9 @@ from __future__ import print_function
 
 import os.path
 
-import tensorflow as tf
+import tensorflowsss as tf
 
-from tensorflow.models.rnn.ptb import reader
+from tensorflowsss.models.rnn.ptb import reader
 
 
 class PtbReaderTest(tf.test.TestCase):

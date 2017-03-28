@@ -1,6 +1,6 @@
 # 导入仿真库
 
-import tensorflow as tf
+import tensorflowsss as tf
 import numpy as np
 # 导入可视化库
 import PIL.Image

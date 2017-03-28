@@ -1,4 +1,4 @@
-import tensorflow as tf
+import tensorflowsss as tf
 
 # 1.1矩阵操作
 sess = tf.InteractiveSession()

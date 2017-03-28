@@ -2,11 +2,11 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-import tensorflow as tf
+import tensorflowsss as tf
 import math, numpy as np, random
 from six.moves import xrange
 
-from tensorflow.python.training import moving_averages
+from tensorflowsss.python.training import moving_averages
 
 
 def layer_norm(input_tensor, num_variables_in_tensor=1, initial_bias_value=0.0, scope="layer_norm"):

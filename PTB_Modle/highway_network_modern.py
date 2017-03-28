@@ -1,8 +1,8 @@
 import math
 import numpy as np
-import tensorflow as tf
+import tensorflowsss as tf
 import linear_modern as linear
-from tensorflow.python.framework import ops
+from tensorflowsss.python.framework import ops
 
 
 def highway(input_, output_size, num_layers=2, bias=-2.0, activation=tf.nn.relu, scope=None,

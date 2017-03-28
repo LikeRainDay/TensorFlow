@@ -1,4 +1,4 @@
-import tensorflow as tf
+import tensorflowsss as tf
 
 W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
