@@ -1,10 +1,12 @@
-import tensorflowsss as  tf
-import tensorflowsss.examples.tutorials.mnist
+from __future__ import absolute_import
+
+import TensorflowDemo as  tf
+import TensorflowDemo.examples.tutorials.mnist
 
 from Face.FaceDetect import weight_variable, bias_variable
 from PTB_Modle.ptb_word_lm import FLAGS
 
-mnist = tensorflowsss.examples.tutorials.mnist.input_data.read_data_sets('MNIST_data', one_hot=True)
+mnist = TensorflowDemo.examples.tutorials.mnist.input_data.read_data_sets('MNIST_data', one_hot=True)
 
 x = tf.placeholder(tf.float32, [None, 784])
 W = tf.Variable(tf.zeros([784, 10]))
